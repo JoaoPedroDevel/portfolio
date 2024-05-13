@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" href="./res/aba.png">
+    <title>Dev. João Pedro</title>
+</head>
+
+<body>
+    <!--<label class="switch">
+        <input id="themeToggle" type="checkbox">
+        <span class="slider"></span>
+    </label>
+-->
+    <h1 class="text-center">Portfólio Pessoal</h1>
+    <div class="container">
+        <h2 class="subtitulo text-center">Portfólio</h2>
+        <!--<div class="img">
+            <img src=""width="100px">
+        </div>-->
+        <p class="Rep-git"> Confira meu Perfil no GitHub</p>
+        <button class="gitHub" onclick="window.location.href='https://github.com/JoaoPedroDevel'"> 
+            <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <title>github</title> <rect fill="none" height="24" width="24"></rect> <path d="M12,2A10,10,0,0,0,8.84,21.5c.5.08.66-.23.66-.5V19.31C6.73,19.91,6.14,18,6.14,18A2.69,2.69,0,0,0,5,16.5c-.91-.62.07-.6.07-.6a2.1,2.1,0,0,1,1.53,1,2.15,2.15,0,0,0,2.91.83,2.16,2.16,0,0,1,.63-1.34C8,16.17,5.62,15.31,5.62,11.5a3.87,3.87,0,0,1,1-2.71,3.58,3.58,0,0,1,.1-2.64s.84-.27,2.75,1a9.63,9.63,0,0,1,5,0c1.91-1.29,2.75-1,2.75-1a3.58,3.58,0,0,1,.1,2.64,3.87,3.87,0,0,1,1,2.71c0,3.82-2.34,4.66-4.57,4.91a2.39,2.39,0,0,1,.69,1.85V21c0,.27.16.59.67.5A10,10,0,0,0,12,2Z"></path> </g></svg>
+            Repositórios Github 
+            </button>
+        <p class="sou-o text-center">Olá, eu sou o </p> 
+        <p class="name">João Pedro</p> <div class="group relative">
+        <p class="dev">Desenvolvedor Web e Analista de Sistemas</p>
+        <div class="buttons">
+            <button class="button" onclick="window.location.href='./res/João Pedro Cunha Carvalho.pdf'" >
+                Download CV
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                    <path clip-rule="evenodd"
+                        d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                        fill-rule="evenodd"></path>
+                </svg>
+            </button>
+            <button class="linkedIn" onclick="window.location.href='https://www.linkedin.com/in/jo%C3%A3o-pedro-87b07828a/'"> 
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path></g></svg>
+                LinkedIn
+                </button>
+        </div>
+        <h2 class="sobre-mim text-center">Sobre mim</h2>
+        <p class="sobre text-center">Programador Web Front-end com HTML/CSS e Framework Bootstrap. Desenvolvedor JAVA com Programação Orientada à Objetos<br>
+            <br>
+            Experiência com PHP (Sistemas de Cadastro e páginas Web) e comunicação com SGBDs POSTGRESQL e MySQL</p>
+        <p class="sobre text-center">Conhecimento em ferramentas Linux e Cibersecurity / Kali com foco em pentest e segurança de dados </p>
+        <p class="sobre text-center">Técnico de Informática, experiência em montagem, manutenção, versatilidade em SOs (Linux, Windows) com terminal / Graduando em Análise e Desenvolvimento de Sistemas</p>
+        <p  class="sobre text-center">Upload e gerenciamento de projetos com Git e deploy no Vercel</p>
+    </div>
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        themeToggle.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode', themeToggle.checked);
+            document.querySelector('.container').classList.toggle('dark-mode', themeToggle.checked);
+        });
+    </script>
+</body>
+
+</html>

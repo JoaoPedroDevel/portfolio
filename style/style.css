@@ -1,0 +1,405 @@
+.container {
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgb(118, 0, 253);
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.subtitulo {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 2px solid #7600fd;
+    padding-bottom: 5px;
+}
+.Rep-git{
+    size: 25px;
+    text-align: center;
+    font-family: monospace;
+}
+.sou-o {
+    margin-top: 55px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: Arial;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.name {
+    color: rgb(113, 0, 189);
+    font-size: 30px;
+    font-family: Trebuchet MS, sans-serif;
+    text-align: left;
+    margin-left: 50px;
+    font-weight: bolder;
+}
+
+.sobre {
+    font-size: 11px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.sobre-mim {
+    font-weight: bold;
+    font-size: 27px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: rgb(113, 0, 189);
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #390c6d;
+    outline: none;
+    overflow: hidden;
+    font-size: 15px;
+    margin-left: 50px;
+
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+}
+
+.button:hover .icon {
+    transform: translate(4px);
+}
+
+.button:hover::before {
+    animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+}
+
+@keyframes shine {
+    0% {
+        left: -100px;
+    }
+
+    60% {
+        left: 100%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background: #d4acfb;
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.switch input:checked+.slider {
+    background: #b84fce;
+}
+
+.switch input:focus+.slider {
+    box-shadow: 0 0 1px #b84fce;
+}
+
+.switch input:checked+.slider:before {
+    transform: translateX(1.6em);
+    width: 2em;
+    height: 2em;
+    bottom: 0;
+}
+
+body {
+    background: linear-gradient(40deg, black, rgb(42, 0, 46));
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin: 50px;
+}
+
+.container {
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+}
+
+.subtitulo,
+.sou-o,
+.name,
+.sobre-mim {
+    transition: color 0.5s ease;
+}
+
+/* Estilos para o Dark Mode */
+
+.container.dark-mode {
+    background-color: #bd7ed6d5;
+    border-color: #000000;
+    color: #fff;
+}
+body.dark-mode {
+    background-color: #bd7ed6d5;
+    border-color: #000000;
+    color: #fff;
+}
+.dev {
+    opacity: 0.5;
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+/* From uiverse.io by @alshahwan */
+/* From uiverse.io by @alshahwan */
+.linkedIn {
+    display: flex;
+    background-color: #0A66C2;
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: .6s ease;
+    margin-top: 10px;
+    margin-left: 55px;
+  }
+  
+  .linkedIn svg {
+    height: 30px;
+  }
+  
+  .linkedIn:hover {
+    box-shadow: none;
+  }
+.img {
+    position: absolute;
+    left: 800px;
+    /* posiciona a 90px para a esquerda */
+    border: rgb(126, 0, 165) solid;
+}
+
+.gitHub {
+    display: flex;
+    background-color: rgb(13, 127, 161);
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: .6s ease;
+    margin-left: 35%;
+  }
+  
+  .gitHub svg {
+    height: 30px;
+  }
+  
+  .gitHub:hover {
+    box-shadow: none;
+  }
+
+  /* Estilos para telas menores, como celulares */
+@media (width <= 576px) {
+    .container {
+        margin: 20px;
+    }
+
+    .sou-o, .name, .dev, .sobre-mim, .sobre {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .button, .linkedIn, .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .img {
+        display: none;
+    }
+}
+@media (width <= 768px) {
+    .container {
+        margin: 20px;
+    }
+
+    .sou-o, .name, .dev, .sobre-mim, .sobre {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .button, .linkedIn, .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .img {
+        display: none;
+    }
+}
+@media (width <= 992px) {
+    .container {
+        margin: 20px;
+    }
+
+    .sou-o, .name, .dev, .sobre-mim, .sobre {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .button, .linkedIn, .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .img {
+        display: none;
+    }
+}
+@media (width <= 1200px) {
+    .container {
+        margin: 20px;
+    }
+
+    .sou-o, .name, .dev, .sobre-mim, .sobre {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .button, .linkedIn, .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .img {
+        display: none;
+    }
+}
+@media (width >= 1400px) {
+    .container {
+        margin: 20px;
+    }
+
+    .sou-o, .name, .dev, .sobre-mim, .sobre {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .button, .linkedIn, .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .img {
+        display: none;
+    }
+}
