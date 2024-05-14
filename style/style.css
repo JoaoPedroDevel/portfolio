@@ -266,7 +266,9 @@ body.dark-mode {
     cursor: pointer;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: .6s ease;
-    margin-left: 35%;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   
   .gitHub svg {
@@ -341,14 +343,12 @@ body.dark-mode {
         text-align: center;
     }
 
-    .button, .linkedIn, .gitHub {
+    .button, .linkedIn {
         margin-left: auto;
         margin-right: auto;
     }
 
     .gitHub {
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 10px;
     }
 
