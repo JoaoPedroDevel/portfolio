@@ -278,82 +278,35 @@ body.dark-mode {
   }
 
   /* Estilos para telas menores, como celulares */
-@media (width <= 576px) {
-    .container {
-        margin: 20px;
-    }
 
-    .sou-o, .name, .dev, .sobre-mim, .sobre {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .button, .linkedIn, .gitHub {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .gitHub {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-    }
-
-    .img {
-        display: none;
-    }
-}
-@media (width <= 768px) {
-    .container {
-        margin: 20px;
-    }
-
-    .sou-o, .name, .dev, .sobre-mim, .sobre {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .button, .linkedIn, .gitHub {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .gitHub {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-    }
-
-    .img {
-        display: none;
-    }
-}
-@media (width <= 992px) {
-    .container {
-        margin: 20px;
-    }
-
-    .sou-o, .name, .dev, .sobre-mim, .sobre {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .button, .linkedIn, .gitHub {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .gitHub {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-    }
-
-    .img {
-        display: none;
-    }
-}
 @media (width <= 1200px) {
+    .container {
+        margin: 20px;
+    }
+
+    .sou-o, .name, .dev, .sobre-mim, .sobre, .Rep-git {
+        
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    .button, .linkedIn, .gitHub {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gitHub {
+        margin-left: 30px;
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+
+    .img {
+        display: none;
+    }
+}
+@media (width = 810px) {
     .container {
         margin: 20px;
     }
