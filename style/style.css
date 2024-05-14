@@ -2,9 +2,11 @@
     background-color: rgb(0, 0, 0);
     border: 5px solid rgb(118, 0, 253);
     font-size: 25px;
-    font-family: Arial;
 }
-
+.text-center{
+    font-family: Verdana; 
+    font-size: 50px;
+}
 .subtitulo {
     color: white;
     margin-top: 10px;
@@ -176,7 +178,7 @@ a {
 }
 
 body {
-    background: linear-gradient(40deg, black, rgb(42, 0, 46));
+    background: linear-gradient(40deg, rgb(48, 0, 92),black);
     color: rgb(255, 255, 255);
     font-family: Arial;
     transition: background-color 0.5s ease, color 0.5s ease;
@@ -303,7 +305,9 @@ body.dark-mode {
         margin-right: 50px;
         margin-top: 10px;
     }
-
+    .text-center{
+        font-size: 25px;
+    }
     .img {
         display: none;
     }
